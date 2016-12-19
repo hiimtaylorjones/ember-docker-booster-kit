@@ -7,9 +7,11 @@ WORKDIR /myapp
 
 # Installing Ember-Cli, Bower, and PhantomJS
 
-RUN npm install -g ember-cli
-RUN npm install -g bower
-RUN npm install -g phantomjs
+RUN npm install -g yarn
+
+RUN yarn global add ember-cli
+RUN yarn global add bower
+RUN yarn global add phantomjs-prebuilt
 
 
 # Installing Watchman!
