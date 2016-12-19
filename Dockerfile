@@ -24,3 +24,5 @@ RUN \
 	./configure &&\
 	make &&\
 	make install
+
+RUN yarn install

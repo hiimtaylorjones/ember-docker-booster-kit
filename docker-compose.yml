@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: ember server
+    volumes:
+      - .:/myapp
+    ports:
+      - "4200:4200"
